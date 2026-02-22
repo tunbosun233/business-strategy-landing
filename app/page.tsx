@@ -16,7 +16,7 @@ export default function Page() {
     const link = document.createElement('a');
     
     // This points to the file in your /public folder
-    link.href = '/CHECKLIST.pdf'; 
+    link.href = '/The_100K_Conversion_Checklist.pdf'; 
     
     // This sets the name the user sees when saving
     link.download = 'The_100K_Conversion_Checklist.pdf'; 
