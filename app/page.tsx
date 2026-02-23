@@ -55,18 +55,14 @@ export default function Page() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button
-                  onClick={handlePdfDownload}
-                  className="group relative px-8 py-4 font-semibold text-primary-foreground rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl"
-                  style={{
-                    background: 'linear-gradient(135deg, #00E9FF 0%, #008C99 100%)',
-                  }}
-                >
-                  <span className="flex items-center justify-center gap-2">
-                    {pdfDownloading ? 'Downloading...' : 'Download PDF'}
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </button>
+                <a
+  href="/The_100K_Conversion_Checklist.pdf"
+  download
+  className="group relative px-8 py-4 font-semibold text-primary-foreground rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl"
+  style={{ background: 'linear-gradient(135deg, #00E9FF 0%, #008C99 100%)' }}
+>
+  Download PDF
+</a>
                 <a
                   href="#audit"
                   className="px-8 py-4 font-semibold border-2 border-primary text-primary rounded-lg hover:bg-primary/10 transition-colors text-center"
